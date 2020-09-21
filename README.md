@@ -1,5 +1,29 @@
 
+# Python
 
+## WINDOWS Setup
+```
+mkdir environment
+cd environment
+py -m venv env
+cd env
+.\Scripts\activate
+pip install pymysql
+cd lib/site-packages
+```
+
+## MAC Setup
+```
+mkdir environment
+cd environment
+python3 -m venv env
+source ./bin/activate
+pip install numpy -t .
+cd lib/python3.7/site-packages
+zip -r zip.zip .
+```
+
+---
 
 ```
 import json 
