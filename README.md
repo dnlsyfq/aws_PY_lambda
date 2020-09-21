@@ -12,6 +12,22 @@ pip install pymysql
 cd lib/site-packages
 ```
 
+## WINDOWS WSL Setup
+```
+ubuntu1804
+cd /mnt/c
+sudo apt update
+sudo apt-get upgrade
+sudo apt install software-properties-common
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt install python3.8
+sudo apt install python3-pip
+python3.8 -m pip install --system --target ./ pandas
+sudo python3.8 -m pip install --system --target ./ pandas
+
+```
+
+
 ## MAC Setup
 ```
 mkdir environment
@@ -25,6 +41,8 @@ zip -r zip.zip .
 ```
 
 ---
+
+
 
 ```
 import json 
