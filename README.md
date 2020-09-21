@@ -18,7 +18,8 @@ mkdir environment
 cd environment
 python3 -m venv env
 source ./bin/activate
-pip install numpy -t .
+cd env
+pip3 install numpy 
 cd lib/python3.7/site-packages
 zip -r zip.zip .
 ```
