@@ -1,7 +1,7 @@
 
 # Python
 
-## WINDOWS Setup
+## WINDOWS Setup - Zip
 ```
 mkdir environment
 cd environment
@@ -12,7 +12,7 @@ pip install pymysql
 cd lib/site-packages
 ```
 
-## WINDOWS WSL Setup
+## WINDOWS WSL Setup - Zip
 ```
 ubuntu1804
 cd /mnt/c
@@ -24,6 +24,19 @@ sudo apt install python3.8
 sudo apt install python3-pip
 python3.8 -m pip install --system --target ./ pandas
 sudo python3.8 -m pip install --system --target ./ pandas
+
+```
+
+## WINDOWS WSL Setup - Layers
+```
+ubuntu1804
+cd /mnt/c
+mkdir -p build/python/lib/python3.6/site-packages
+pip3 install requests -t  build/python/lib/python3.6/site-packages --system
+sudo pip3 install pandas -t build/python/lib/python3.6/site-packages --system
+pip3 install numpy -t build/python/lib/python3.6/site-packages --system
+cd build
+zip python
 
 ```
 
