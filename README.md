@@ -71,3 +71,11 @@ def lambda_handler(event, context):
     
 
 ```
+---
+
+MAC
+
+```
+pip install -r requirements.txt -t .
+```
+```
